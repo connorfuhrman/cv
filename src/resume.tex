@@ -4,11 +4,6 @@
 %%% TeX-master: t
 %%% End:
 
-%-------------------------
-% Resume in Latex
-% Author : Vidushi Wahal
-%------------------------
-
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -46,20 +41,26 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-%-------------------------
+% -------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
+\item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeBullet}[1]{
+\item\small{
+    {#1 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -67,119 +68,136 @@
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+  \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+  \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -------------------------------------------
+%%%%%% CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
 
-%----------HEADING-----------------
+% ----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Vidushi Wahal}} & Email : \href{mailto:vidushi22@gmail.com}{vidushi22@gmail.com}\\
-   & Mobile : +91-9811405837\\
+  \textbf{{\Large Connor M. Fuhrman}} & Email: \href{mailto:connorfuhrman@email.arizona.edu}{connorfuhrman@email.arizona.edu} \\
+                                      & Mobile: (512) 897 0709
 \end{tabular*}
 
-
-%-----------Professional Summary-----------------
-\section{Professional Summary}
- \resumeItemListStart
-      \resumeItem{Experience: }
-          {6+ years of diverse experience in Information Technology with emphasis on Software Quality Assurance (Automation and Manual Testing) for various domains like insurance, e-commerce, ERP}
-          \resumeItem{Responsibilities: }
-          {Involved in all phases of the SDLC and STLC, including requirements gathering, risk analysis, test planning, test estimation, scheduling, test execution, defect tracking, and reporting. End to end test delivery experience starting from initiation through to final test delivery using Agile methodology.}
-        \resumeItem{Testing}
-          {Experience in testing methodologies like functional, non-functional, integration, regression, system, user acceptance testing (UAT), and risk based testing}
-        \resumeItem{Automation Exposure: }
-          {Specialization in designing Automation Frameworks for Functional testing and Regression testing activities in Codedui C\# and Selenium (C\#/Java), along with SOAPUI for API testing.}
-          \resumeItem{Testing Tools: }
-          {Experience in testing and analyzing tools like Google Cloud Platform, Microsoft Test Manager, Emulators, Simulators for mobile testing}
-         
-      \resumeItemListEnd
-
-
-%-----------EXPERIENCE-----------------
-\section{Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {G4S Technologies}{Gurgaon, Haryana}
-      {Senior QA Engineer }{Oct 2016 - Present}
-     
-      \resumeItemListStart
-      \resumeItem{Project: }
-          {Javelin - G4S End To End ERP Business Application}
-          \resumeItem{Team Management: }
-          {Working to form testing strategies and approach, there by, ensuring end to end application testing along with daily regression and reporting to the key stakeholders for weekly production releases.}
-        \resumeItem{Requirement Gathering}
-          {Working closely with BA and PFOs to understand the requirement which further leads to creation of Test Scenarios and Test Cases}
-        \resumeItem{Automation: }
-          {Using SOAP UI and Selenium with Java and MongoDB for web applications}
-         \resumeItem{Awards}
-          {Received Silver Award (2018) and a Bronze award (2018) for ensuring quality product delivery and for contribution in all version deliverable. Received multiple awards for day-night support for release of another country (2019)}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {On Demand Agility Software Solutions}{Gurgaon, Haryana}
-      {Senior Software Engineer}{Jun 2014 - Oct 2016}
-      \resumeItemListStart
-       \resumeItem{Project: }
-          {www.horizonhobby.com, www.forcerc.com - E-commerce}
-        \resumeItem{Automation Framework}
-          {Designing of Automation framework by evaluating different approaches for the e-commerce project which also includes reporting.}
-          \resumeItem{Lead Roles}
-          {Managing a team of 3 ensuring all development tasks meet quality criteria through test planning, test execution, quality assurance and issue tracking.}
-        \resumeItem{Test Cases}
-          {Creating automated test cases using CodedUI and C\# for HorizonHobby.com and Selenium with C\# for ForceRC.com}       
-        \resumeItem{Mobile Testing}
-          {Testing of the e-commerce website on mobile using BrowserStack as emulator.}
-        \resumeItem{Security Testing}
-          {Using cross-site scripting in order to test }
-        \resumeItem{Trainings}
-          {Providing training on frameworks , codedui and c sharp language for automation of test cases to new QA members and freshers}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Infogain India Pvt. Ltd.}{Noida, Uttar Pradesh}
-      {Software Engineer}{Jan 2013 and Jun 2014}   
-      \resumeItemListStart
-        \resumeItem{Project: }
-          {Decision Point (a Mitchell Product) - Insurance }
-        \resumeItem{Test Cases: }
-          {Creating scenario based automated test cases using Coded UI with C Sharp.}
-        \resumeItem{Automation: }
-          {Automating the existing manual test assets and providing better approach for automation framework. Actively involved in automation code review on daily basis. Involved in Test Impact Analysis on weekly basis.}
-        \resumeItem{Automation Reports: }
-          {Conducting Regression Testing, failure analysis and reporting via MTM.}
-           \resumeItem{White Box Testing: }
-          {Writing Unit Test cases using Telerik JustMock framework; writing Integration test cases. Code Coverage Analysis and Code Metrix Analysis}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
- \resumeSubHeadingListStart
-   \item{\textbf{Languages}{: C\#, Java, Javascript, SQL, Groovy}}
-     \item{\textbf{Testing Tools}{: CodedUI, MTM(Microsoft Test Manager), TFS, Visual Studio, Selenium, SOAPUI, Google Cloud Console, JIRA, TestNG, QTest, MongoDB}}
-      \item{\textbf{Mocking Framework}{: Telerik Mock}}
- \resumeSubHeadingListEnd
-
-%-----------EDUCATION-----------------
+% ----------- Education ---------------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Apeejay College Of Engineering}{Gurgaon, Haryana}
-      {Bachelor of Technology in IT;  Percentage: 67}{Aug. 2008 -- Dec. 2012}
-    \resumeSubheading
-      {Holy Child Auxilium}{Vasant Vihar, Delhi}
-      {AISSCE (10+2) ; Percentage: 73}{Apr. 2007 -- May. 2008}
-    \resumeSubheading
-      {Holy Child Auxilium}{Vasant Vihar, Delhi}
-      {AISSE (10); Percentage: 87}{Apr. 2005 -- May. 2006}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{The University of Arizona}{Tucson, AZ}
+{Doctor of Philosophy in Electrical and Computer Engineering}{Aug. 2018 -- current}
+\resumeItemListStart
+\resumeItem{Academics}
+{3.9 cumulative in-major GPA overall. Entered direct PhD program but satisfied requirements for MS to be granted May 2022.}
+\resumeItem{Awards/Recognition}
+{\textit{2019 College of Engineering Outstanding TA Award} for exceptional work as a lab course teaching assistant.}
+\resumeItemListEnd
 
-%-------------------------------------------
+\resumeSubheading
+{The Citadel The Military College of South Carolina}{Charleston, SC}
+{Bachelor of Science in Electrical Engineering}{Aug. 2014 -- May. 2018}
+
+\resumeItemListStart
+\resumeItem{Academics}
+{3.9 cumulative GPA overall with minors in Applied Mathematics and Aerospace Science.}
+\resumeItem{Awards/Recognition}
+{\textit{2018 Peter Gaillard Memorial Award} for scholastic attainment, leadership, and participation in extracurricular activities. \textit{Featured in \href{https://www.citadel.edu/root/our-mighty-citadel/connor-fuhrman}{``Our Mighty Citadel''} recruitment material} which showcases extraordinary cadets.}
+\resumeItem{Leadership Training}
+{2018 Regimental Academic Officer (3\textsuperscript{rd} highest ranking cadet of approx. 3,500 within the Corps of Cadets) responsible for general academic excellence reporting to the Regimental Commander and The Citadel Provost.
+  Lead approximately 30 cadet officers responsible for academic excellence within their respective unit.
+  Directly involved with instantiation of approximately 30 new cadet positions for underclassmen reporting to Academic Officers in their respective units to provide continuity between academic years.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+% -----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Raytheon Technologies}{Tucson, AZ}
+{Graduate Intern}{May 2019 -- current}
+
+\resumeItemListStart
+\resumeBullet{Work 10-15 hours per week nominally during the academic year and full time during the summer session. Maintain current ``intern'' title to provide flexibility and priority to PhD work.}
+\resumeBullet{Software Engineer within the \textit{Advanced Technologies Department} working on the \href{https://www.darpa.mil/program/collaborative-operations-in-denied-environment}{CODE (Collaborative Operations in Denied Environment)} autonomy software system which is both a FACE\footnote{\href{https://www.opengroup.org/face}{Future Airborne Capability Environment}}-compliant framework for autonomous capabilities and a growing repository of (flight-tested) autonomous capabilities.}
+\resumeBullet{Mostly focused on internal research and development projects but have been critically involved with multiple multi-million dollar, customer-financed programs.}
+\resumeBullet{Responsibilities vary based on group's needs and personal scheduling but include, and are not limited to,
+  creation (design, implementation, software integration, bench testing with both computer and hardware in the loop, and flight testing) of new autonomous capabilities,
+  creation of simulation scenarios (running inside a Raytheon-proprietary simulation framework) for testing and validation of autonomous capabilities in relevant environments,
+  real-time sensor interface (design, implementation, bench and field testing, and software integration),
+  integration of third-party algorithms and autonomous capabilities into new and/or existing autonomous capabilities,
+  and new employee onboarding and indoctrination through both mentorship and formal onboarding documents.
+}
+\resumeBullet{Involved with safety and quality testing prior to flight events. Previously have been responsible for preparation of test procedures, execution of test procedures, debugging test failures, and/or supervision and validation of test procedures at both the classified and unclassified level.}
+\resumeBullet{Work closely with team responsible for hardware demonstration platforms to ensure successful integration between hardware and CODE software. Involved with flight testing at both the classified and unclassified level. Experienced operating autonomous drones, validating in-situ testing results, and performing hardware field repairs.}
+\resumeBullet{Previously engaged with the \textit{Algorithm and Simulation Directorate} working within a classified lab area to characterize radar cross-section for specific target(s) of interest using commercial electromagnetic simulation tools and custom-built MATLAB scripts for post-processing analysis and visualization.}
+\resumeItem{Supervisor}{Dr. Bob Grabowski, Engineering Fellow, CODE Chief Scientist and Chief Engineer, who can be contacted at \href{mailto:robert.j.grabowski@raytheon.com}{robert.j.grabowski@raytheon.com}.}
+\resumeItem{Reference}{Matt Young, Engineering Fellow involved with Automatic Target Recognition, Artificial Intelligence, and Machine Learning who can be contacted at \href{mailto:matthew\_t\_young@raytheon.com}{matthew\_t\_young@raytheon.com}.}
+\resumeItemListEnd
+
+\resumeSubheading
+{University of Arizona}{Tucson, AZ}
+{Course Instructor: ECE 275 ``Computer Programming for Engineering Applications II''}{Aug 2020 - current}
+
+\resumeItemListStart
+\resumeBullet{Course material includes the C++ language, object-oriented programming, algorithms, and data structures. Course size ranges between 50 to 125 students nominally. Depending on course size manage multiple teaching assistants and/or undergraduate assistants.}
+\resumeBullet{Created custom assignment autograder running on the UArizona's GitLab server's CI/CD pipeline to evaluate student submissions using \href{https://cmake.org/cmake/help/latest/manual/ctest.1.html}{ctest} running inside Docker containers based on Alpine Linux. Wrote and \href{https://github.com/connorfuhrman/GitLab-Course-Manager}{open-sourced} repository of Python scripts to interface GitLab to post assignments, compile grades, and view statistical measures of student success.}
+\resumeBullet{Updated course structure to be almost entirely project-based informed by experience both in industry and academia. Instruction style requires students to utilize the C++ STL documentation and other open-source resources to complete assignments. Focus on teaching \textit{how to learn how to program} using the C++ language.}
+\resumeBullet{Updated learning objectives and curriculum to include modern C++ features from the 2011 standard (e.g., smart pointers, delegating constructors, automatic type deduction, default and deleted functions, and nullptr).}
+\resumeBullet{Introduced more open-ended final project with black-box executable testing where students are allowed and encouraged to utilize any outside library to perform shortest-path graph search using, e.g., the Boost Graph Library or the LEMON library. Provides students the opportunity to utilize both compiled and/or header-only C++ libraries while providing some insight into the design of software systems who's complexity exceeds the scope of the course.}
+\resumeItem{Supervisor}{Dr. Tamal Bose, Department Head of Electrical and Computer Engineering who can be contacted at \href{mailto:tbose@arizona.edu}{tbose@arizona.edu}.}
+\resumeItemListEnd
+
+\resumeSubheading
+{University of Arizona}{Tucson, AZ}
+{Visual and Autonomous Exploration Systems Research Lab (VAESRL)}{Aug 2019 - Jan 2022}
+
+\resumeItemListStart
+\resumeBullet{Integrated Raspberry Pi 4 into robotic platform. Proficiency with Raspbian and Ubuntu OS on Raspberry Pi's. Proficient with BCM2835 C library for GPIO interface including serial communication interfaces. Experienced using Linux chardev GPIO interface and pigpio.}
+\resumeBullet{Experienced with Arduino microcontroller programming both with the Arduino IDE and directly via avr-gcc.}
+\resumeBullet{Experienced with \href{https://nasa.github.io/fprime/}{NASA F'} software framework. Proficient in creation of components, ports, and applications. Deployed F' applications on both Raspberry Pi and Arduino hardware.}
+\resumeBullet{Experienced with Espressif ESP-32 microcontrollers programmed both with Arduino libraries and baremetal. Proficient with serial communication interfaces and WiFi communication ESP-IDF libraries.}
+\resumeBullet{Proficient creating and maintaining containerized development environments via Docker.}
+\resumeBullet{Designed and implemented C and C++ communications libraries built atop \href{https://github.com/billvaglienti/ProtoGen}{ProtoGen}. Implemented initial Python bindings using \href{https://www.boost.org/doc/libs/1_78_0/libs/python/doc/html/index.html}{Boost Python}. Integrated these libraries into other C/C++ projects via CMake \href{https://cmake.org/cmake/help/latest/module/ExternalProject.html}{ExternalProject}.}
+\resumeBullet{Author or co-author of multiple research proposals from both internal and external funding sources.}
+\resumeItemListEnd
+
+\resumeSubheading
+{The Citadel The Military College of South Carolina}{Charleston, SC}
+{Intelligent Ground Vehicle Competition (IGVC)}{Aug 2017 - June 2018}
+
+\resumeItemListStart
+\resumeBullet{Team captain directly responsible for software integration and simulation. Led both group responsible for development in a senior design course and group which attended competition.}
+\resumeBullet{Designed and implemented software application built on the \href{https://www.ros.org}{the Robot Operating System (ROS)}\footnote{Note that ROS 2 was not available at this time so application was built on ROS 1}. Provided oversight to and integrated individual efforts by team members.}
+\resumeBullet{Created simulation in \href{http://gazebosim.org}{Gazebo}\footnote{Note this is ``Gazebo classic'' as Ignition Gazebo was not yet available.} of physical robotic platform and onboard sensors placed in realistic IGVC competition course.}
+\resumeBullet{Responsible for the \href{http://igvc.secs.oakland.edu/design/2018/16.pdf}{final report} submitted to IGVC. Led presentation at 2018 Citadel Electrical Engineering Design Symposium in May 2018.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\newpage
+
+% --------PROGRAMMING SKILLS------------
+\section{Programming Languages and Tools}
+\resumeSubHeadingListStart
+\item{\textbf{Proficiencies}{: C, C++ (language and STL), selected Boost C++ Libraries, multithreaded programming (POSIX and C++ STL), Python, MATLAB, CMake, UNIX (including specifically the UArizona HPC system), Git, Raspberry Pi (hardware and software), Arduino (hardware and software), \LaTeX}}
+\item{\textbf{Working Knowledge}{: Julia, TensorFlow, PyTorch, BASH scripting, Docker, Singularity, Robot Operating System (ROS), Gazebo, NASA F' software framework, Espressif ESP-IDF and ESP-MDF, Doxygen, CUDA C/C++, PSpice}}
+\resumeSubHeadingListEnd
+
+% ----------- Publications --------------
+\section{Publications}
+\resumeItemListStart
+\resumeBullet{Bassil Ramadan, Wolfgang Fink, Andres Nuncio Zuniga, Kristena Kay, Nick Powers, Connor Fuhrman \& Sunggye Hong (2021) VISTA: Visual Impairment Subtle Touch Aid – a range detection and feedback system for sightless navigation, Journal of Medical Engineering \& Technology, DOI: 10.1080/03091902.2021.1988167}
+\resumeItemListEnd
+  
 \end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
